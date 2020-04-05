@@ -65,6 +65,19 @@ public class Usuario {
     }
 
 
+    @Override
+    public boolean equals(Object o){
+
+    if(( o instanceof Usuario) && (((Usuario)o).getCedula() == this.cedula))
+
+        {
+        return true;
+            }else{
+        return false;
+        }
+
+    }
+
 
 
 
