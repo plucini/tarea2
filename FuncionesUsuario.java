@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 public class FuncionesUsuario {
 
     public int calcularImpuestos (Usuario user){
@@ -29,6 +32,15 @@ public class FuncionesUsuario {
 
 
         return (int) impuestos;
+    }
+
+
+    public void agregarSueldo (Usuario user){
+
+        Scanner teclado = new Scanner (System.in);
+        int sueldo = teclado.nextInt();
+
+        user.setSaldo(user.getSaldo() + sueldo);
     }
 
 }
